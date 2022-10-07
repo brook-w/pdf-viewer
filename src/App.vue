@@ -1,6 +1,11 @@
 <template>
+  <a
+    class="github"
+    target="_blank"
+    href="https://github.com/brook-w/pdf-viewer"
+    title="源码实现"
+  ></a>
   <PDFViewer></PDFViewer>
-  <div></div>
 </template>
  
 <script lang='ts'>
@@ -15,4 +20,16 @@ export default defineComponent({
 </script>
  
 <style scoped>
+.github {
+  position: fixed;
+  right: 50px;
+  top: 40px;
+  z-index: 100;
+  background-image: url("./assets/img/github.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 48px;
+  height: 48px;
+}
+
 </style>
